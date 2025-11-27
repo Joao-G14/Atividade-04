@@ -1,10 +1,23 @@
-N = int(input())
+n = int(input())
 
-fat = 1
-contador = N
+if n < 1:
+    print(1)
 
-while contador > 1:
-    fat *= contador
-    contador -= 1
+    exit()
 
-print(fat)
+
+if n >= 13:
+    print("Erro")
+    exit()
+
+resultado = 1
+i = n
+
+while True:
+    resultado *= i
+    i -= 1
+    
+    if i == 0:
+        break
+
+print(resultado)
